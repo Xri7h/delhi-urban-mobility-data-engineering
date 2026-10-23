@@ -102,12 +102,6 @@ The project supports SQL analysis of:
 - Number of stops per trip
 - Route-level and stop-level patterns
 
-## Repository Contents
-
-- `README.md` — Project overview and documentation
-- `project-structure.md` — Pipeline architecture and project structure
-- `notebooks/` — Databricks project notebook
-
 
 
 
