@@ -37,7 +37,6 @@ Azure Databricks
 - Azure Databricks
 - PySpark
 - SQL
-- Delta Lake
 - GitHub
 
 ## Data Pipeline
