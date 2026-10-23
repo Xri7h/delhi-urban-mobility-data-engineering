@@ -77,6 +77,22 @@ The fact table connects trip, route, and stop information to support transit rou
 | Trips | 89,393 |
 | Fact table records | 3,724,320 |
 
+### Key Findings
+
+- Processed **3.72 million trip-stop records** into the Gold fact table.
+- Analyzed **89,393 trips** across **2,403 routes** and **10,559 stops**.
+- Average trip contains approximately **41.66 stops**.
+- Identified trips with fewer than 5 stops and trips exceeding 100 stops for further data validation.
+- Validated route stop sequences, including a route containing 197 stops with sequential stop ordering.
+- Created analytics-ready dimensional tables to support route-level, trip-level, and stop-level SQL analysis.
+
+### Data Quality
+
+- Verified uniqueness of route, stop, and trip identifiers in the Silver layer.
+- Checked missing identifiers during data validation.
+- Compared Bronze and Silver record counts to verify expected data retention.
+- Validated stop sequence consistency for selected trips and routes.
+
 ## Analytics
 
 The project supports SQL analysis of:
