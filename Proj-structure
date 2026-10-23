@@ -1,64 +1,19 @@
-## Project Structure
+# Project Roadmap
 
-## Project: Delhi Urban Mobility Data Engineering Platform
-
-This project uses Azure Data Lake Storage Gen2 and Azure Databricks to build a data engineering pipeline using Delhi bus transit data.
-
-## Architecture
-
-```text
-Delhi Bus Transit Data
-        |
-        v
-Azure Data Lake Storage Gen2
-        |
-        |-- raw/
-        |    |-- bus/
-        |         |-- agency.txt
-        |         |-- routes.txt
-        |         |-- stops.txt
-        |         |-- trips.txt
-        |         |-- stop_times.txt
-        |         |-- calendar.txt
-        |         |-- fare_attributes.txt
-        |
-        v
+Delhi Bus GTFS Data
+↓
+Azure Data Lake Storage Gen2 (Raw)
+↓
 Azure Databricks
-        |
-        |-- Bronze Layer
-        |    |-- bronze_routes
-        |    |-- bronze_stops
-        |    |-- bronze_trips
-        |    |-- bronze_stop_times
-        |
-        |-- Silver Layer
-        |    |-- silver_routes
-        |    |-- silver_stops
-        |    |-- silver_trips
-        |    |-- silver_stop_times
-        |
-        |-- Gold Layer
-             |-- dim_route
-             |-- dim_stop
-             |-- dim_trip
-             |-- fact_trip_stop
-```
-
-## Data Processing
-
-- **Bronze:** Ingest raw transit data into Databricks tables.
-- **Silver:** Clean and validate the data.
-- **Gold:** Build dimensional tables and a fact table for analytics.
-
-## Technologies
-
-- Azure Data Lake Storage Gen2
-- Azure Databricks
-- PySpark
-- SQL
-- Delta Lake
-
-## Analytics
-
-The Gold layer supports analysis of routes, stops, trips, and stop occurrences using SQL.
-
+↓
+Bronze Layer — Raw Ingestion
+↓
+Silver Layer — Cleaning & Data Quality
+↓
+Gold Layer — Dimensional Modeling
+↓
+Fact & Dimension Tables
+↓
+SQL Analytics
+↓
+Project Results
